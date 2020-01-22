@@ -213,7 +213,9 @@ public class DocumentPickerModule extends ReactContextBaseJavaModule {
     return map;
   }
 
-
+  /**
+   * @see https://github.com/joltup/rn-fetch-blob/blob/master/android/src/main/java/com/RNFetchBlob/Utils/PathResolver.java
+   */
   @TargetApi(Build.VERSION_CODES.KITKAT)
   public static String getPath(final Context context, final Uri uri) {
     final boolean isKitKat = Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT;
